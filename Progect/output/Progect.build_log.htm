@@ -1,0 +1,80 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: yang yang, qqqqq, LIC=QF82M-X6II9-WFRI7-EP5XW-88HH1-D3FPH
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  E:\MDK5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+G:\上频电子\ymtflowerpot\STM32F10xTemplate\Progect\Progect.uvprojx
+Project File Date:  03/18/2021
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+..\User\main.c(305): warning:  #177-D: variable "data" was declared but never referenced
+        u16 data=0;
+..\User\main.c(882): warning:  #177-D: variable "LostValue" was declared but never referenced
+        int LostValue = 4;
+..\User\main.c(1612): warning:  #188-D: enumerated type mixed with another type
+                data_parse_struct_t.message_type=0;
+..\User\main.c(2054): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                                        if(strlen(data_parse_struct_t.piid[0]) == 1 && memcmp(data_parse_struct_t.piid[0],"1",1)==0)
+..\User\main.c(2093): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                                                MainLen = strlen(data_parse_struct_t.value[0]);
+..\User\main.c(2094): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                                                IntValue = atoi(data_parse_struct_t.value[0]);
+..\User\main.c(2132): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                                                MainLen = strlen(data_parse_struct_t.value[0]);
+..\User\main.c(2133): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                                                IntValue = atoi(data_parse_struct_t.value[0]);
+..\User\main.c(2161): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                                                MainLen = strlen(data_parse_struct_t.value[0]);
+..\User\main.c(2162): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                                                IntValue = atoi(data_parse_struct_t.value[0]);
+..\User\main.c(2191): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                                                MainLen = strlen(data_parse_struct_t.value[0]);
+..\User\main.c(2195): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                                                        Valuell = atoi(&data_parse_struct_t.value[0][1]);
+..\User\main.c(2287): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                                                MainLen = strlen(data_parse_struct_t.value[0]);
+..\User\main.c(2288): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                                                IntValue = atoi(data_parse_struct_t.value[0]);
+..\User\main.c(2579): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                                        if(strlen(data_parse_struct_t.piid[0]) == 1 && memcmp(data_parse_struct_t.piid[0],"1",1)==0)//LED
+..\User\main.c(1597): warning:  #550-D: variable "j" was set but never used
+        int i=0,j=0;
+..\User\main.c(3087): warning:  #167-D: argument of type "int16_t *" is incompatible with parameter of type "uint16_t *"
+        FlashGetSafe(&safe_temperature[0],&safe_temperature[1],safe_type_temperature);
+..\User\main.c(3087): warning:  #167-D: argument of type "int16_t *" is incompatible with parameter of type "uint16_t *"
+        FlashGetSafe(&safe_temperature[0],&safe_temperature[1],safe_type_temperature);
+..\User\main.c: 18 warnings, 0 errors
+linking...
+Program Size: Code=50264 RO-data=632 RW-data=812 ZI-data=18100  
+FromELF: creating hex file...
+After Build - User command #1: E:\MDK5\ARM\ARMCC\bin\fromelf.exe  --bin -o  .\Progect\fw.bin  .\output\Progect.axf
+".\output\Progect.axf" - 0 Error(s), 18 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  G:\上频电子\ymtflowerpot\STM32F10xTemplate\Progect\RTE
+  E:\MDK5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>
